@@ -1,0 +1,29 @@
+<div id="main-wrapper">
+    <div id="inner-wrapper">
+        
+        <div class="ingredients-input">
+            <input type="text" #ingredientsName placeholder="Enter recipe name">
+            <input type="text" #quantity placeholder="Enter quantity">
+            <button class="button-1" (click)="addIngredientsToList(ingredientsName.value, quantity.value)" >Add</button>
+        </div>
+
+        <div class="shopping-list-container">
+
+            <ul *ngIf="list.length > 0">
+                <li *ngFor="let recipe of list">
+                    <p> {{recipe.name}}</p>
+                    <div class="buttons">
+                        <div class="quantity">
+                            <p> {{recipe.quantity}} </p>
+                        </div>
+                        <div class="button-2" (click)="removeFromList(recipe.name)">
+                            Remove
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <h1 *ngIf="list.length == 0" >Your cart is empty 😞, please add some ingredients</h1>            
+        </div>
+    </div>
+</div>

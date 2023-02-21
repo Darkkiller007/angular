@@ -1,0 +1,19 @@
+#outer-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#inner-wrraper{
+    width: 100%;
+    height: 88%;
+    /* background-size: 100% 100%; */
+    /* background-image: url('https://media.tenor.com/qaY9gPpAhzUAAAAM/foodie-food.gif'); */
+}
+
+#video{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}

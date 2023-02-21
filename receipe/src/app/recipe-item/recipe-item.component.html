@@ -1,0 +1,23 @@
+<div class="container">
+        <!-- <div class="item-detail">
+            <button class="manage">Manage Recipe</button>
+        </div> -->
+        <div class="ingredients">
+            <div class="image">
+                <img src={{imageUrl}} alt="Dummy image">
+                <button id="addToShoppingList" (click)="addToShoppingList(ingredients)" >+</button>
+            </div>
+            <div class="name">
+                <h3> {{recipeName}} </h3>
+            </div>
+            <div class="description">
+                <h1> {{desc}} </h1>
+            </div>
+            <div class="reicpeIngredients">
+                <h1>Ingredients</h1>
+                <ul>
+                    <li *ngFor="let ingred of ingredients"> {{ingred}} </li>
+                </ul>
+            </div>
+        </div> 
+</div>

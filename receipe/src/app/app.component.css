@@ -1,0 +1,76 @@
+.head{
+    width: 60vw;
+    align-items: center;
+    font-weight: 500;
+    font-size:xx-large;
+    color: brown;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+}
+
+.btn-grp{
+    display: flex;
+    float: right;
+    justify-content: space-evenly;
+    width: 13vw;
+    height: 40px;
+}
+
+.top {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    border: 8px inset white;
+    
+  }
+  
+  .comp {
+    float: left;
+    font-size: large;
+    cursor: pointer;
+  }
+
+  .heading{
+    color: white;
+    font-size: xx-large;
+    margin: 0px;
+    float: left;
+    width: fit-content;
+    cursor:pointer;
+  }
+  
+  .comp a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .comp a:hover:not(.active) {
+    background-color: #04AA6D;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .sub-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    /* background-image: url('https://tenor.com/view/foodie-food-delicious-yummy-cravings-gif-17554117'); */
+  }

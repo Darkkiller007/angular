@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card-outline">
+        <div class="data1">Name</div>
+        <div class="sub1"><input class="namedata" #recipeName /></div>
+        <div class="data2">Description</div>
+        <div class="sub2"><input class="desc" #description /></div>
+        <div class="data3">Ingredients</div>
+        <div class="sub3"><input class="ingredients" #ingredients /></div>
+        <div class="data4">Image</div>
+        <div class="sub4"><input class="img" #photo /></div>
+        <div class="footer-group">
+            <button class="button-1" (click)="save(recipeName.value, description.value, ingredients.value, photo.value)">Save</button>
+            <button class="button-2" (click)="clear(recipeName, description, ingredients, photo)">Clear</button>
+        </div>
+    </div>
+</div>

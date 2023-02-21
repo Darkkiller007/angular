@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="main-view">
+        <div class="new-recipe"></div>
+            <div class="cards">
+
+                <div class="card" routerLink="/receipeitem" *ngFor="let food of recipeData" (click)="targetname(food.name)">
+                    <div class="image">
+                        <img src={{food.img}} alt="Dummy image">
+                    </div>
+                    <div class="name">
+                        <h3> {{ food.name }} </h3>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+</div>
