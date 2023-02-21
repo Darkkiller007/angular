@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="section">
+    <div class="display">
+      <div class="col-sm-12 form-control text-lg-right" type="text">{{input}}</div>
+    </div>
+    <div class="display-1">
+      <div class="form-control text-sm-right" type="text">{{result}}</div>
+    </div>
+  </div>
+  <div class="numbers">
+    <div class="num1">
+      <button class="raised-button1" color="primary" (click)="pressOperator('%')">MOD</button>
+      <button class="raised-button1" color="primary" (click)="allClear()">Clear</button>
+    </div>
+    <div class="num2">
+      <button class="raised-button" color="primary" (click)="pressNum('7')">7</button>
+      <button class="raised-button" color="primary" (click)="pressNum('8')">8</button>
+      <button class="raised-button" color="primary" (click)="pressNum('9')">9</button>
+      <button class="raised-button1" (click)="pressOperator('/')">/</button>
+    </div>
+    <div class="num3">
+      <button class="raised-button" color="primary" (click)="pressNum('4')">4</button>
+      <button class="raised-button" color="primary" (click)="pressNum('5')">5</button>
+      <button class="raised-button" color="primary" (click)="pressNum('6')">6</button>
+      <button class="raised-button1" (click)="pressOperator('*')">*</button>
+    </div>
+    <div class="num4">
+      <button class="raised-button" color="primary" (click)="pressNum('1')">1</button>
+      <button class="raised-button" color="primary" (click)="pressNum('2')">2</button>
+      <button class="raised-button" color="primary" (click)="pressNum('3')">3</button>
+      <button class="raised-button1" (click)="pressOperator('-')">-</button>
+    </div>
+    <div class="num5">
+      <button class="raised-button" color="primary" (click)="pressNum('.')">.</button>
+      <button class="raised-button" color="primary" (click)="pressNum('0')">0</button>
+      <button class="raised-button2" color="primary" (click)="getAnswer()">=</button>
+      <button class="raised-button1" (click)="pressOperator('+')">+</button>
+    </div>
+  </div>
+</div>
