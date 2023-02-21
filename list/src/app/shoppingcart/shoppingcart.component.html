@@ -1,0 +1,39 @@
+
+<div class="shoppingCart">
+    <form action="" class="form" (submit)="addtocart()" >
+        <input 
+        type="text" 
+        name="Inputproduct"  
+        class="cart-product" 
+        placeholder="Product-name"
+        [(ngModel)]="inputproduct"
+        required
+        />
+  
+        <input 
+        type="number" 
+        name="Inputprice" 
+        value=""
+        placeholder="Price"
+        class="cart-price" 
+        required
+        [(ngModel)]="inputprice"
+        />
+  
+    <input type="submit" value="Add to Cart" class="cart-submit"> 
+    </form>
+    <div class="cart" *ngFor="let cart of shoppingcart; let i = index;" >
+        <div class="id">{{i+1}}</div>
+        <div class="product" >{{cart.product}}</div>
+        <div class="qty"> 
+            <span class="qt-minus" (click)="productminus(i)" >-</span>
+            <span class="qt">{{cart.quantity}}</span>
+            <span class="qt-plus" (click)="productplus(i)">+</span>
+        </div>
+        <div class="price">Rs.{{cart.quantity * cart.price}}</div>
+        <button class="remove" (click)="removefromcart(i)"><i class="fa-solid fa-delete-left"></i></button>
+    </div>
+  
+    <div class="subtotal">Total = Rs. {{getTotal()}} </div>
+</div>
+  
